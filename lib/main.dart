@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
     if (dateTime.isEmpty) {
       return "";
     }
-    return DateFormat("dd.mm.yyyy").format(
+    return DateFormat("d.MM.y").format(
       DateTime.tryParse(dateTime) ?? DateTime.now(),
     );
   }
